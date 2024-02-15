@@ -28,26 +28,31 @@ class _Assignment1State extends State<Assignment1> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+
           children: [
             const Text(
               "Click button to print table values",
             ),
+
             const SizedBox(
               height: 20,
             ),
+
             Text(
               "$_count",
             ),
+
             const SizedBox(
               height: 20,
             ),
+            
             ElevatedButton(
               onPressed: _printTableValue,
               child: const Text("Print"),
               ),
           ],
-          ),
-           ),
+        ),
+      ),
     );
   }
 }
